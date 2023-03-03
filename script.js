@@ -85,6 +85,7 @@ function restartGame(){
     cells.forEach(cell => cell.textContent = "");
     playerXbtn.addEventListener("click", setPlayerX);
     playerObtn.addEventListener("click", setPlayerO);
+    running = false;
 }
 
 function setPlayerX() {
