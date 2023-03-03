@@ -1,3 +1,8 @@
+body {
+    background: linear-gradient(79deg, rgba(34,193,195,1) 0%, rgba(130,217,201,1) 25%, rgba(211,237,206,1) 42%, rgba(232,212,126,1) 71%, rgba(253,187,45,1) 100%);background-attachment: fixed;
+    
+}
+
 .cell {
     width: 75px;
     height: 75px;
@@ -6,6 +11,7 @@
     line-height: 75px;
     font-size: 50px;
     cursor: pointer;
+    background-color: white;
 }
 
 #cellContainer {
@@ -18,5 +24,30 @@
 #gameContainer {
     font-family: 'Righteous', cursive;
     text-align: center;
-
 }
+
+button {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    color:#FFFFFF;
+    background-color: #ff5757;
+    text-align:center;
+    transition: all 0.2s;
+    }
+
+button:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    }
+
+@media all and (max-width:30em){
+    button{
+    display:block;
+    margin:0.4em auto;
+    }
+    }
