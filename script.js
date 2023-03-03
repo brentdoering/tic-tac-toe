@@ -80,11 +80,11 @@ function checkWinner(){
 
 }
 function restartGame(){
-    currentPlayer = "X";
     options = ["", "", "", "", "", "", "", "", "",];
-    statusText.textContent = `${currentPlayer}'s turn`
+    statusText.textContent = `Please choose your player first`
     cells.forEach(cell => cell.textContent = "");
-    running = true;
+    playerXbtn.addEventListener("click", setPlayerX);
+    playerObtn.addEventListener("click", setPlayerO);
 }
 
 function setPlayerX() {
@@ -101,7 +101,7 @@ function setPlayerO() {
     if(running){
         return;
     }
-    
+
     currentPlayer = "O";
     statusText.textContent = `${currentPlayer}'s turn`
     running = true;
